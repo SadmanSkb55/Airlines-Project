@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AvailAirCon">
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="1500.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="756.0" fitWidth="1513.0" layoutX="-5.0" layoutY="-2.0" opacity="0.46">
+               <image>
+                  <Image url="@../../../../../Pictures/Saved%20Pictures/Sky3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img1" fitHeight="158.0" fitWidth="307.0" layoutX="48.0" layoutY="145.0" onDragEntered="#photodisplay1" onDragExited="#photodisplay2" onMouseEntered="#photodisplay1" onMouseExited="#photodisplay2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/EA2pic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img2" fitHeight="128.0" fitWidth="332.0" layoutX="422.0" layoutY="164.0" onMouseEntered="#photodisplay3" onMouseExited="#photodisplay4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/EtApic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img3" fitHeight="127.0" fitWidth="311.0" layoutX="806.0" layoutY="158.0" onMouseEntered="#photodisplay5" onMouseExited="#photodisplay6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/DApic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img4" fitHeight="93.0" fitWidth="355.0" layoutX="1147.0" layoutY="181.0" onMouseEntered="#photodisplay7" onMouseExited="#photodisplay8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/CPpic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img8" fitHeight="245.0" fitWidth="244.0" layoutX="1216.0" layoutY="393.0" onMouseEntered="#photodisplay15" onMouseExited="#photodisplay16" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/QAXpic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img7" fitHeight="102.0" fitWidth="325.0" layoutX="833.0" layoutY="448.0" onMouseEntered="#photodisplay13" onMouseExited="#photodisplay14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/LApic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img6" fitHeight="120.0" fitWidth="313.0" layoutX="465.0" layoutY="427.0" onMouseEntered="#photodisplay11" onMouseExited="#photodisplay12" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/AApic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img5" fitHeight="186.0" fitWidth="316.0" layoutX="75.0" layoutY="406.0" onMouseEntered="#photodisplay9" onMouseExited="#photodisplay10" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/BApic-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="163.0" layoutY="324.0" text="Emirates" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="593.0" layoutY="338.0" text="Etihad" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="966.0" layoutY="338.0" text="Delta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="1266.0" layoutY="338.0" text="Cathway Pacific" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="1311.0" layoutY="597.0" text="Qatar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="970.0" layoutY="597.0" text="Lufthansa" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="608.0" layoutY="597.0" text="American" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="597.0" text="British" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="680.0" layoutY="74.0" text="Aviation Services" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="498.0" layoutY="646.0" mnemonicParsing="false" onAction="#previousScene" prefHeight="45.0" prefWidth="212.0" style="-fx-background-color: #000000;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="920.0" layoutY="642.0" mnemonicParsing="false" onAction="#adderscene" prefHeight="50.0" prefWidth="212.0" style="-fx-background-color: #000000;" text="Add Flights" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

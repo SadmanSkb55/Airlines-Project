@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FlightMSceneController">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="708.0" fitWidth="1113.0" layoutX="-7.0" layoutY="-2.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%206.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="449.0" layoutY="63.0" text="Flight Status Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="flights" layoutX="111.0" layoutY="173.0" prefHeight="31.0" prefWidth="347.0" style="-fx-background-radius: 15;" />
+            <ChoiceBox fx:id="times" layoutX="111.0" layoutY="274.0" prefHeight="31.0" prefWidth="347.0" style="-fx-background-radius: 15;" />
+            <ChoiceBox fx:id="froms" layoutX="111.0" layoutY="394.0" prefHeight="31.0" prefWidth="347.0" style="-fx-background-radius: 15;" />
+            <ChoiceBox fx:id="tos" layoutX="111.0" layoutY="508.0" prefHeight="31.0" prefWidth="347.0" style="-fx-background-radius: 15;" />
+            <TextArea fx:id="comment" layoutX="609.0" layoutY="216.0" prefHeight="210.0" prefWidth="394.0" />
+            <Button layoutX="774.0" layoutY="477.0" mnemonicParsing="false" onAction="#publish" style="-fx-background-color: #DFCCFB; -fx-background-radius: 10;" text="Publish">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="516.0" layoutY="632.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #DFCCFB; -fx-background-radius: 10;" text="Update">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="111.0" layoutY="134.0" text="Flight" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="233.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="352.0" text="From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="465.0" text="Destination" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="609.0" layoutY="173.0" text="Comment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Done" alignment="CENTER" layoutX="372.0" layoutY="94.0" prefHeight="31.0" prefWidth="372.0" textFill="#2dc62d">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

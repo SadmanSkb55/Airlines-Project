@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TicketSceneController">
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Background" fitHeight="754.0" fitWidth="1500.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../../../Pictures/Saved%20Pictures/Air1.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="WelcomeMsg" layoutX="672.0" layoutY="30.0" prefHeight="50.0" prefWidth="157.0" style="-fx-text-fill: #6528F7; -fx-font-size: 27; -fx-font-weight: Bold;" text="Information" textFill="#f99417">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Name" layoutX="52.0" layoutY="139.0" prefHeight="37.0" prefWidth="539.0" promptText="Name" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Nationality" layoutX="51.0" layoutY="208.0" prefHeight="37.0" prefWidth="540.0" promptText="Nationality" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Email" layoutX="52.0" layoutY="278.0" prefHeight="37.0" prefWidth="538.0" promptText="Email" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Phonenumber" layoutX="52.0" layoutY="340.0" prefHeight="37.0" prefWidth="540.0" promptText="Phone Number" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="EmerPhoneNum" layoutX="51.0" layoutY="403.0" prefHeight="37.0" prefWidth="539.0" promptText="Emergency Phone Number" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="DOB" layoutX="52.0" layoutY="469.0" onAction="#getDobX" prefHeight="35.0" prefWidth="536.0" promptText="Date of Birth" style="-fx-background-color: #000000; -fx-background-radius: 0;" />
+            <TextField fx:id="POB" layoutX="52.0" layoutY="533.0" prefHeight="37.0" prefWidth="535.0" promptText="Place of Birth" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="PCN" layoutX="52.0" layoutY="601.0" prefHeight="37.0" prefWidth="535.0" promptText="Passport Card Number" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ChoiceBox fx:id="ChoiceGen" layoutX="54.0" layoutY="671.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <ChoiceBox fx:id="ChoiceFrom" layoutX="901.0" layoutY="237.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <ChoiceBox fx:id="ChoiceTo" layoutX="899.0" layoutY="300.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <DatePicker fx:id="DeptDate" layoutX="899.0" layoutY="359.0" onAction="#getDeptDateX" prefHeight="35.0" prefWidth="536.0" promptText="Depurture Date" style="-fx-background-color: #000000; -fx-background-radius: 0;" />
+            <ChoiceBox fx:id="ChoiceDeptTime" layoutX="899.0" layoutY="414.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <ChoiceBox fx:id="ChoiceFlight" layoutX="899.0" layoutY="480.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <ChoiceBox fx:id="ChoiceClass" layoutX="900.0" layoutY="544.0" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" />
+            <Slider fx:id="NOS" blockIncrement="1.0" layoutX="903.0" layoutY="616.0" majorTickUnit="14.0" max="14.0" minorTickCount="0" prefHeight="27.0" prefWidth="531.0" style="-fx-background-color: #000000; -fx-background-radius: 10; -fx-translate-y: 0;" />
+            <Button fx:id="Previous" layoutX="1147.0" layoutY="696.0" mnemonicParsing="false" onAction="#previousScene" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: #6528F7; -fx-background-radius: 20;" text="Previous Page" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="Assign" layoutX="1300.0" layoutY="696.0" mnemonicParsing="false" onAction="#assignPassenger" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: #6528F7; -fx-background-radius: 20;" text="Proceed" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Button>
+            <CheckBox fx:id="Mode" layoutX="1341.0" layoutY="96.0" mnemonicParsing="false" onAction="#DarkMode" style="-fx-background-color: #6528F7; -fx-background-radius: 5;" text="Dark Mode" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></CheckBox>
+            <Label fx:id="NOSshow" layoutX="1050.0" layoutY="591.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningMsg" contentDisplay="CENTER" layoutX="428.0" layoutY="86.0" prefHeight="21.0" prefWidth="670.0" textAlignment="CENTER" textFill="#fc0707">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="107.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="183.0" text="Nationality" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="256.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="319.0" text="Phone Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="381.0" text="Emergency Phone Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="447.0" text="Date of Birth" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="511.0" text="Place of Birth" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="579.0" text="Passport Card Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="646.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="912.0" layoutY="214.0" text="From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="912.0" layoutY="269.0" text="To" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="910.0" layoutY="332.0" text="Depurture Date" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="910.0" layoutY="391.0" text="Depurture time" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="911.0" layoutY="457.0" text="Flight" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="911.0" layoutY="521.0" text="Class" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="914.0" layoutY="592.0" text="Number of Seats" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecuitController">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="722.0" fitWidth="804.0" layoutY="-8.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%208.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="333.0" layoutY="27.0" text="Recruitment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Name" layoutX="166.0" layoutY="109.0" prefHeight="42.0" prefWidth="486.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="NID" layoutX="166.0" layoutY="185.0" prefHeight="42.0" prefWidth="486.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="Email" layoutX="166.0" layoutY="262.0" prefHeight="42.0" prefWidth="486.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="PhNum" layoutX="166.0" layoutY="336.0" prefHeight="42.0" prefWidth="486.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="Pass" layoutX="166.0" layoutY="488.0" prefHeight="42.0" prefWidth="486.0" style="-fx-background-radius: 10;" />
+            <PasswordField fx:id="Repass" layoutX="167.0" layoutY="561.0" prefHeight="41.0" prefWidth="484.0" style="-fx-background-radius: 10;" />
+            <ChoiceBox fx:id="Dept" layoutX="171.0" layoutY="412.0" prefHeight="40.0" prefWidth="476.0" style="-fx-background-radius: 10;" />
+            <Label layoutX="171.0" layoutY="82.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="171.0" layoutY="158.0" text="NID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="171.0" layoutY="235.0" text="EMail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="309.0" text="Phone Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="385.0" text="Depertment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="461.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="530.0" text="Re-Type Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="173.0" layoutY="633.0" mnemonicParsing="false" onAction="#recruuiter" style="-fx-background-radius: 10; -fx-background-color: #DFCCFB;" text="Recruit">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="456.0" layoutY="633.0" mnemonicParsing="false" onAction="#recruitandassign" style="-fx-background-radius: 10; -fx-background-color: #DFCCFB;" text="Recruit And Assign">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="warning" alignment="CENTER" layoutX="400.0" layoutY="69.0" textFill="#d70e0e">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

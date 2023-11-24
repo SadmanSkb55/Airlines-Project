@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WeatherControll">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="709.0" fitWidth="1206.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="107.0" layoutY="84.0" text="Weather" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="290.0" fitWidth="524.0" layoutX="107.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/Worldmap-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ChoiceBox fx:id="loc" layoutX="131.0" layoutY="537.0" prefHeight="31.0" prefWidth="398.0" />
+            <TextField fx:id="temp" layoutX="603.0" layoutY="172.0" prefHeight="31.0" prefWidth="427.0" />
+            <TextField fx:id="hum" layoutX="603.0" layoutY="256.0" prefHeight="31.0" prefWidth="427.0" />
+            <TextField fx:id="wind" layoutX="603.0" layoutY="354.0" prefHeight="31.0" prefWidth="427.0" />
+            <TextField fx:id="precip" layoutX="603.0" layoutY="455.0" prefHeight="31.0" prefWidth="427.0" />
+            <ChoiceBox fx:id="sts" layoutX="603.0" layoutY="537.0" prefHeight="31.0" prefWidth="426.0" />
+            <Label layoutX="603.0" layoutY="134.0" text="Temparature" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="603.0" layoutY="225.0" text="Humidity" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="603.0" layoutY="323.0" text="Wind" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="603.0" layoutY="424.0" text="Precipitation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="604.0" layoutY="506.0" text="Status" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="506.0" text="Location" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="952.0" layoutY="617.0" mnemonicParsing="false" onAction="#updater" text="Update">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="done" alignment="CENTER" layoutX="335.0" layoutY="84.0" prefHeight="38.0" prefWidth="494.0" textFill="#d31010">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

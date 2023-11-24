@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FileHandler">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="500.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%203.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="165.0" layoutY="88.0" text="File Manager" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="181.0" text="Once you Reset,All the data will be Erased" textFill="#ee1313">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="247.0" text="Must Rewrite Files After Reset" textFill="#ee1313">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="box" layoutX="84.0" layoutY="355.0" mnemonicParsing="false" onAction="#abort" text="I Am Agree With The Terms And Conditions" textFill="#e40e0e" />
+            <Button layoutX="165.0" layoutY="413.0" mnemonicParsing="false" onAction="#abort" style="-fx-background-color: #BE3144;" text="Launch Operation">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

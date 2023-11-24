@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NoticeBController">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="902.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%207.jpeg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="noticetxts" layoutX="50.0" layoutY="103.0" opacity="0.64" prefHeight="481.0" prefWidth="802.0" style="-fx-background-radius: 20;" />
+            <Button layoutX="375.0" layoutY="627.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #EEE0C9;" text="Update And Publish">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="400.0" layoutY="45.0" text="Notice Panel">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="done" alignment="CENTER" layoutX="321.0" layoutY="71.0" prefHeight="26.0" prefWidth="263.0" textFill="#4ab51c">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

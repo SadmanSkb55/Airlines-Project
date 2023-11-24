@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminSceneController">
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="763.0" fitWidth="1505.0" layoutX="-2.0" layoutY="-5.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%208.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="690.0" layoutY="61.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="745.0" layoutY="104.0" text="..." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/employee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="432.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/noticeboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="685.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/flight-information.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="955.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/guard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1245.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/airport%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1256.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/folder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="962.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/weather-forecast.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="689.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/passenger.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="421.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/landing.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="138.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/financial-advisor.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="98.0" layoutY="393.0" mnemonicParsing="false" onAction="#Employeem" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Employee Management" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="435.0" layoutY="393.0" mnemonicParsing="false" onAction="#NoticeM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="NoticeBoard " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="695.0" layoutY="393.0" mnemonicParsing="false" onAction="#FlightM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Flight Status" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="981.0" layoutY="393.0" mnemonicParsing="false" onAction="#SecurityM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Security" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="1207.0" layoutY="387.0" mnemonicParsing="false" onAction="#AviationM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Aviation Management" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="1241.0" layoutY="670.0" mnemonicParsing="false" onAction="#FileM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="File Management" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="955.0" layoutY="670.0" mnemonicParsing="false" onAction="#WeatherM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Weather Updates" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="666.0" layoutY="670.0" mnemonicParsing="false" onAction="#PassengerM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Passenger Informations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="670.0" mnemonicParsing="false" onAction="#RandTM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Runway And Terminals" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="109.0" layoutY="670.0" mnemonicParsing="false" onAction="#FinanceM" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Finance Administration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="1373.0" layoutY="40.0" mnemonicParsing="false" onAction="#previousScene" style="-fx-background-color: #AAC8A7; -fx-background-radius: 10;" text="Previous" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

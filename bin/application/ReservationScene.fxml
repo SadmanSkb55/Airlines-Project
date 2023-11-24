@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReserveController">
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="752.0" fitWidth="1508.0" layoutX="-5.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../../../../Dropbox/PC/Downloads/gradient%203.jpeg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="searchbar" layoutX="509.0" layoutY="112.0" prefHeight="31.0" prefWidth="491.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #F9F3CC; -fx-border-color: #CAEDFF; -fx-border-width: 3;" />
+            <Label layoutX="489.0" layoutY="61.0" text="Search with your Reservation ID" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="688.0" layoutY="179.0" mnemonicParsing="false" onAction="#searcher" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #F9F3CC; -fx-background-radius: 10;" text="Search">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="89.0" layoutY="685.0" mnemonicParsing="false" onAction="#previous" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #A8DF8E; -fx-background-radius: 10;" text="Previous">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="699.0" layoutY="677.0" mnemonicParsing="false" onAction="#proceed" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #A8DF8E; -fx-background-radius: 10;" text="proceed">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="1284.0" layoutY="676.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #A8DF8E; -fx-background-radius: 10;" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="167.0" layoutY="276.0" opacity="0.21" prefHeight="339.0" prefWidth="1177.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <children>
+                  <TextArea fx:id="area" layoutX="4.0" layoutY="5.0" prefHeight="324.0" prefWidth="1174.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="warning" alignment="CENTER" layoutX="736.0" layoutY="236.0" textFill="#e40a0a">
+               <font>
+                  <Font name="Monospaced Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
